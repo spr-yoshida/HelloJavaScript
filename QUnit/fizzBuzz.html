@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FizzBuzz</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="fizzBuzz.js"></script>
+</head>
+<body>
+  <div id="result"></div>
+	<script>
+		$(function(){
+			for (i = 1; i < 40; i++) {
+				$('#result').append(i + "\t:\t").append(fizzBuzz(i)).append("<br>");
+			}
+		});
+	</script>
+</body>
+</html>
